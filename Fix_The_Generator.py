@@ -1,3 +1,4 @@
+#Take a list of numbers, return all combination of 3
 from itertools import combinations
 
 def checkio(data):

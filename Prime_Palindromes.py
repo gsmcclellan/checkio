@@ -1,3 +1,10 @@
+""" Prime Palindromes
+    Greg McClellan
+
+    Given a number, returns the first number that is a prime palindrome
+    greater than or equal to the first number.
+"""
+
 from math import sqrt
 
 def checkio(data):
@@ -26,5 +33,13 @@ def check_prime(number):
                 
         return True
 
-print("check_palindrome of 121 = ", check_palindrome(121))
-print("check_palindrome of 4023 = ", check_palindrome(4023))
+
+def main():
+    number = int(input("Enter a number: "))
+    prime_palindrome = checkio(number)
+    print("Next prime palindrome starting from %i: %i" \
+            %(number, prime_palindrome))
+
+
+if __name__ == '__main__':
+    main()

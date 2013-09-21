@@ -1,7 +1,7 @@
 """
 	Greg McClellan
-	Created: 8/25/2013
-	Last Edited: 8/25/2013
+	Created: 2013-8-25
+	Last Edited: 2013-8-25
 
 	Problem:
 
@@ -38,6 +38,7 @@
 """
 
 def roman_numerals(number):
+	"""Returns a number as its roman numeral counterpart"""
 	if number < 4:
 		return 'I'*number
 
@@ -77,5 +78,12 @@ def roman_numerals(number):
 	else:
 		return ('M' * int(number/1000)) + roman_numerals(number % 1000)
 
-for i in range(1, 4001):
-	print(i, ": ", roman_numerals(i))
+
+def main():
+	number = int(input("Enter a number: "))
+	roman = roman_numerals(number)
+	print(number, ": ", roman)
+
+
+if __name__ == '__main__':
+	main()
